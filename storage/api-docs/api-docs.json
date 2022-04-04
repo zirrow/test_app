@@ -1,0 +1,59 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Distance calculation",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/hamming/submit": {
+            "post": {
+                "description": "Hamming distance calculation",
+                "operationId": "5f27842e849707d02ae437ddd8b3b01b",
+                "parameters": [
+                    {
+                        "name": "first_string",
+                        "in": "query",
+                        "description": "First string",
+                        "required": true
+                    },
+                    {
+                        "name": "second_string",
+                        "in": "query",
+                        "description": "First string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/levenshtein/submit": {
+            "post": {
+                "description": "Levenshtein distance calculation",
+                "operationId": "2fff37ee29456d20525f9a2910f896d1",
+                "parameters": [
+                    {
+                        "name": "first_string",
+                        "in": "query",
+                        "description": "First string",
+                        "required": true
+                    },
+                    {
+                        "name": "second_string",
+                        "in": "query",
+                        "description": "First string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    }
+}
